@@ -1,0 +1,11 @@
+{
+  "boot-source": {
+    "kernel_image_path": "target/x86_64-unikraft-linux-musl/release/helloworld",
+    "boot_args": "helloworld"
+  },
+  "machine-config": {
+    "vcpu_count": 1,
+    "mem_size_mib": 8
+  },
+  "drives": []
+}

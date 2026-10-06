@@ -1,0 +1,17 @@
+[build]
+target = "x86_64-unikraft-linux-musl"
+
+[target.x86_64-unikraft-linux-musl]
+rustflags = ["-A", "linker_messages"]
+
+[unstable]
+build-std = ["std", "panic_abort"]
+
+[profile.release]
+lto = true
+codegen-units = 1
+
+[env]
+KRAFTKIT_TARGET = "helloworld"
+KRAFTKIT_PLAT = "fc"
+KRAFTKIT_ARCH = "x86_64"

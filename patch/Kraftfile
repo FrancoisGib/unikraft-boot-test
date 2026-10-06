@@ -1,0 +1,16 @@
+spec: v0.6
+
+name: helloworld
+
+unikraft:
+  source: https://github.com/FrancoisGib/unikraft.git
+  version: patch
+  kconfig:
+    CONFIG_LIBUKBOOT_BANNER_NONE: "y"
+    CONFIG_OPTIMIZE_DEADELIM: "y"
+
+libraries:
+  musl: stable
+
+targets:
+  - fc/x86_64
