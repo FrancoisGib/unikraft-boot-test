@@ -1,0 +1,1 @@
+rm -rf */target target */.unikraft */Makefile.uk */.config.*
